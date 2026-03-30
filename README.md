@@ -45,7 +45,7 @@
 - 🔩 **BOM List**: Detailed down to the specifications and purchase links for every single screw.
 - 💻 **Software & Algorithms**: Python SDK, ROS1/2, Isaac Sim, LeRobot, etc.
 
-## Obtenir votre propre bras reBot Arm
+## Build Your Own reBot Arm
 
 - We offer five kit options:
   - **Arm Body Motor Kit**: Includes only motors and wiring harnesses for the robotic arm.
