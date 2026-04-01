@@ -1,4 +1,4 @@
-# 🧪 Référence de Test de Performance Physique reBot-DevArm
+# 🧪 Référence de test de performance réelle reBot-DevArm
 
 <p align="center">
   <img src="./images/v1.0.png" alt="reBot-DevArm Banner">
@@ -15,140 +15,119 @@
 </p>
 
 > [!NOTE]
-> Ce document fournit des données de référence de test de performance pour le bras robotique reBot Arm B601-DM dans des conditions de travail normales et extrêmes.
+> Ce document fournit des données de test de performance de référence pour le reBot Arm B601-DM dans des conditions de travail normales et extrêmes.
 
 > [!WARNING]
-> **Avis de Différence de Version**: Ce test est basé sur le reBot Arm B601-DM équipé de **moteurs Damiao version V4**. **Les versions V3 et antérieures des moteurs présentent des différences de performance**. Les données de test sont fournies à titre indicatif ; veuillez vérifier les performances réelles par des tests.
+> **Différence de version** : Ce test est basé sur le reBot Arm B601-DM équipé de **moteurs Damiao version V4**. Les performances des versions V3 et antérieures diffèrent. Les données sont fournies à titre indicatif uniquement, les performances réelles doivent être vérifiées par des tests.
 
 ---
 
-## 💡 Résumé Rapide
+## 📋 Table des matières
 
-**Raison d'Arrêt des Tests**: Tous les tests ont été arrêtés en raison de la **protection contre la surchauffe du moteur 2 (articulation du bras supérieur)**, et non d'une défaillance de la structure mécanique.
+- [⚡ Test de performance en conditions extrêmes](#-test-de-performance-en-conditions-extrêmes)
+- [📈 Courbe de charge officielle](#-courbe-de-charge-officielle)
+- [📝 Conclusion et recommandations](#-conclusion-et-recommandations)
+- [🙋 Questions fréquentes (FAQ)](#-questions-fréquentes-faq)
+- [📅 Historique des mises à jour](#-historique-des-mises-à-jour)
+- [📞 Support technique](#-support-technique)
 
-**Test de Mouvement Dynamique** (Durée d'un cycle de mouvement : 5s standard, mouvement de va-et-vient) :
+---
 
-| Plage de Portée | Charge | Durée | Raison d'Arrêt |
+## ⚡ Test de performance en conditions extrêmes
+
+### Conditions de test
+
+**Test de mouvement dynamique** :
+- Durée d’un mouvement : 5 s
+- Mode de mouvement : mouvement alternatif
+- Plage d’extension du bras : 5%~70% / 5%~100% de la portée nominale
+
+**Test de maintien statique** :
+- Posture de test : maintien statique sous charge
+- Extension du bras : 70% / 100% de la portée nominale
+
+### Résultats des tests
+
+> 👉 **Conclusion principale** : La structure du bras est suffisamment robuste. L’arrêt du test est dû à la **protection contre la surchauffe du moteur n°2**. Charge recommandée **≤ 1,5 kg**, portée recommandée **< 70%**, et il est conseillé d’ajouter un refroidissement actif.
+
+#### 1. Test de mouvement dynamique
+
+| Plage du bras | Charge | Durée | Cause d’arrêt |
 |----------|------|----------|----------|
-| 5%~70% de la Portée Nominale | 1.5 kg | > 2 h | Température du moteur 2 à 90℃ |
-| 5%~70% de la Portée Nominale | 2.5 kg | 40 min | Protection contre la surchauffe du moteur 2 |
-| 5%~100% de la Portée Nominale | 1.5 kg | 45 min | Protection contre la surchauffe du moteur 2 |
+| Mouvement alternatif 5%–70% | 1.5 kg | > 2 h | Température du moteur n°2 à 90°C, arrêt manuel |
+| Mouvement alternatif 5%–70% | 2.5 kg | 40 min | Protection contre la surchauffe déclenchée |
+| Mouvement alternatif 5%–100% | 1.5 kg | 45 min | Protection contre la surchauffe déclenchée |
 
-**Test de Maintien Statique**:
+#### 2. Test de maintien statique
 
-| Position de Portée | Charge | Durée | Raison d'Arrêt |
-|----------|------|----------|----------|
-| 70% de la Portée Nominale | 1.5 kg | 18 min | Protection contre la surchauffe du moteur 2 |
-| 100% de la Portée Nominale | 1.5 kg | 3 min | Protection contre la surchauffe du moteur 2 |
-
-> 👉 **Conclusion Clé**: La résistance structurelle du manipulateur est suffisante. L'arrêt des tests était dû à la **protection contre la surchauffe du moteur 2**. La charge de travail recommandée est de **1.5 kg ou moins**, la portée de travail recommandée est **inférieure à 70%**, et il est conseillé d'ajouter des mesures de refroidissement actif.
-
----
-
-## 📋 Table des Matières
-
-- [⚡ Test de Performance en Conditions Extrêmes](#-test-de-performance-en-conditions-extrêmes)
-- [📈 Courbe de Charge Officielle](#-courbe-de-charge-officielle)
-- [📝 Conclusions et Recommandations](#-conclusions-et-recommandations)
-- [🙋 Questions Fréquemment Posées (FAQ)](#-questions-fréquemment-posées-faq)
-- [📅 Historique des Mises à Jour](#-historique-des-mises-à-jour)
-- [📞 Support Technique](#-support-technique)
-
----
-
-## ⚡ Test de Performance en Conditions Extrêmes
-
-### Conditions de Test
-
-**Test de Mouvement Dynamique**:
-- Durée d'un cycle de mouvement : 5 s
-- Mode de mouvement : Mouvement de va-et-vient
-- Plage de portée de test : 5%~70% / 5%~100% de la portée nominale
-
-**Test de Maintien Statique**:
-- Position de test : Maintien de charge en position statique
-- Portée de test : 70% / 100% de la portée nominale
-
-### Résultats des Tests
-
-#### 1. Test de Mouvement Dynamique
-
-| Position de Test | Charge (kg) | Durée Maximale | Raison d'Arrêt |
+| Position de test | Charge (kg) | Durée maximale | Cause d’arrêt |
 |----------|-----------|--------------|----------|
-| Portée 5%~70% | 1.5 | > 2 h | Protection contre la surchauffe du moteur 2 |
-| Portée 5%~70% | 2.5 | 40 min | Protection contre la surchauffe du moteur 2 |
-| Portée 5%~100% | 1.5 | 45 min | Protection contre la surchauffe du moteur 2 |
-
-#### 2. Test de Maintien Statique
-
-| Position de Test | Charge (kg) | Durée Maximale | Raison d'Arrêt |
-|----------|-----------|--------------|----------|
-| Portée 70% | 1.5 | 18 min | Protection contre la surchauffe du moteur 2 |
-| Portée 100% | 1.5 | 3 min | Protection contre la surchauffe du moteur 2 |
+| Maintien à 70% d’extension | 1.5 | 18 min | Protection contre la surchauffe |
+| Maintien à 100% d’extension | 1.5 | 3 min | Protection contre la surchauffe |
 
 ---
 
-## 📈 Courbe de Charge Officielle
+## 📈 Courbe de charge officielle
 
-![Courbe de Charge 12Nm](./images/12Nm.png)
+![12Nm 负载曲线图](./images/12Nm.png)
 
-<p align="center">Courbe de Charge du Moteur Série Damiao 43 Version 12Nm</p>
+<p align="center">Courbe de charge moteur série Damiao 43 version 12Nm</p>
 
 ---
 
-## 📝 Conclusions et Recommandations
+## 📝 Conclusion et recommandations
 
-### Recommandations d'Utilisation
+### Recommandations d’utilisation
 
-1. **Conditions de Travail Recommandées**
-   - Charge : < 1.5 kg
+1. **Conditions recommandées**
+   - Charge : < 1,5 kg
    - Rayon de travail : < 70% de la portée (450 mm)
    - Vitesse de mouvement : < 70% de la vitesse maximale
    - Température ambiante : 15 °C ~ 35 °C
 
-2. **Recommandations de Refroidissement**
-   - Lors d'un travail prolongé sous charge élevée, il est recommandé d'ajouter un refroidissement actif
-   - Après 2 heures de travail continu, une pause de 10~15 minutes est recommandée
-   - Évitez l'exposition directe au soleil et l'utilisation dans des espaces fermés
+2. **Recommandations de refroidissement**
+   - Ajouter un refroidissement actif lors d’une utilisation prolongée à forte charge
+   - Après 2 heures de fonctionnement continu, prévoir une pause de 10 à 15 minutes
+   - Éviter l’exposition directe au soleil et les espaces confinés
 
 ---
 
-## 🙋 Questions Fréquemment Posées (FAQ)
+## 🙋 Questions fréquentes (FAQ)
 
 <details>
-<summary><b>Q1 : Les performances du manipulateur diminuent-elles dans des environnements à haute température ?</b></summary>
+<summary><b>Q1 : Les performances diminuent-elles dans un environnement à haute température ?</b></summary>
 
-Oui. Lorsque la température ambiante dépasse 35 °C ou que la température du moteur dépasse 75 °C, il est recommandé de réduire la charge et la vitesse de mouvement pour garantir la précision et la durée de vie. L'utilisation continue à haute température n'est pas recommandée.
+Oui. Lorsque la température ambiante dépasse 35 °C ou que la température du moteur dépasse 75 °C, il est recommandé de réduire la charge et la vitesse afin de garantir la précision et la durée de vie. Une utilisation prolongée à haute température est déconseillée.
 
 </details>
 
 <details>
-<summary><b>Q2 : Les données de test sont-elles applicables à toutes les versions ?</b></summary>
+<summary><b>Q2 : Les données de test s’appliquent-elles à toutes les versions ?</b></summary>
 
-Ce test est basé sur le reBot Arm B601-DM équipé de **moteurs Damiao version V4**. **Les versions V3 et antérieures des moteurs présentent des différences de performance**, les données de test sont donc fournies à titre indicatif.
+Ce test est basé sur la version équipée de **moteurs Damiao V4**. Les performances des versions V3 et antérieures diffèrent, les données sont fournies à titre indicatif.
 
 </details>
 
 ---
 
-## 📅 Historique des Mises à Jour
+## 📅 Historique des mises à jour
 
-| Version | Date | Contenu de la Mise à Jour | Auteur |
+| Version | Date | Contenu de mise à jour | Auteur |
 |------|------|----------|------|
-| v1.0 | 2026.04.01 | Version initiale, publication des données de test de performance de base | SeeedStudio AI Robotics Team |
+| v1.0 | 2026.04.01 | Version initiale, publication des données de test de performance de base | Équipe AI Robotics SeeedStudio |
 
 ---
 
-## 📞 Support Technique
+## 📞 Support technique
 
-Si vous avez des questions relatives aux tests de performance, n'hésitez pas à nous contacter :
+Pour toute question concernant les tests de performance, n’hésitez pas à nous contacter :
 
-- **Support Technique**: yaohui.zhu@seeed.cc
-- **Discord**: [Rejoindre la Communauté](https://discord.gg/AbGuqJhDpQ)
-- **Wiki**: [Consulter la Base de Connaissances](https://wiki.seeedstudio.com/robotics_page/)
+- **Support technique** : yaohui.zhu@seeed.cc
+- **Discord** : [Rejoindre la communauté](https://discord.gg/AbGuqJhDpQ)
+- **Wiki** : [Consulter la base de connaissances](https://wiki.seeedstudio.com/robotics_page/)
 
 ---
 
 <p align="center">
-  <strong>🤖 reBot-DevArm - Manipulateur Open Source pour Chaque Développeur</strong>
+  <strong>🤖 reBot-DevArm - Un bras robotique open source pour chaque développeur</strong>
 </p>
